@@ -1,0 +1,1 @@
+CREATE POLICY "authenticated update pillar health" ON public.pillars FOR UPDATE TO authenticated USING (true) WITH CHECK (true);

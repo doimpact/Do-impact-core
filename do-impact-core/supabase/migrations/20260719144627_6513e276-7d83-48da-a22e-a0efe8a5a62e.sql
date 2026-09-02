@@ -1,0 +1,1 @@
+ALTER TABLE public.employees ADD COLUMN IF NOT EXISTS manager_id uuid REFERENCES public.employees(id) ON DELETE SET NULL; ALTER TABLE public.employees ADD COLUMN IF NOT EXISTS job_title text;

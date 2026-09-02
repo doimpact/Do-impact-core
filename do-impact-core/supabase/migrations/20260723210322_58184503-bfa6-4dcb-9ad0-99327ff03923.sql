@@ -1,0 +1,1 @@
+ALTER TABLE public.waterfall_items ADD COLUMN IF NOT EXISTS strategic_theme_id uuid REFERENCES public.strategic_themes(id) ON DELETE SET NULL;

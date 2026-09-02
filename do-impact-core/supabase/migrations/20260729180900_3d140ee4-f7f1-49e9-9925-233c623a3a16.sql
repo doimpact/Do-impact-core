@@ -1,0 +1,1 @@
+ALTER TABLE public.sic_shifts ADD COLUMN IF NOT EXISTS archived_at timestamptz;

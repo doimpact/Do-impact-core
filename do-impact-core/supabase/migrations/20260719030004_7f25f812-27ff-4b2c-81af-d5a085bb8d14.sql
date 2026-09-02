@@ -1,0 +1,1 @@
+DELETE FROM public.pillars WHERE key = 'customers';

@@ -1,0 +1,2 @@
+ALTER TABLE public.siop_demand ADD COLUMN IF NOT EXISTS monthly_values jsonb NOT NULL DEFAULT '{}'::jsonb;
+ALTER TABLE public.siop_capacity ADD COLUMN IF NOT EXISTS monthly_values jsonb NOT NULL DEFAULT '{}'::jsonb;

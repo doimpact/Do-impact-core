@@ -1,0 +1,1 @@
+REVOKE EXECUTE ON FUNCTION public.tg_eol_seed_checklist() FROM anon, PUBLIC;

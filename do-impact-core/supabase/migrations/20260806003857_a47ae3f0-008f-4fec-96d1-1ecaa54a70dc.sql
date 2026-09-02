@@ -1,0 +1,2 @@
+REVOKE EXECUTE ON FUNCTION public.tg_company_seed_dm_categories() FROM PUBLIC, anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.tg_company_seed_dm_reason_codes() FROM PUBLIC, anon, authenticated;

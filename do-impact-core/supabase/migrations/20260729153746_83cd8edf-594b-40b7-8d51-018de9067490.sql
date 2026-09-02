@@ -1,0 +1,1 @@
+ALTER TABLE public.exec_room_threads ADD COLUMN IF NOT EXISTS archived_at timestamptz;

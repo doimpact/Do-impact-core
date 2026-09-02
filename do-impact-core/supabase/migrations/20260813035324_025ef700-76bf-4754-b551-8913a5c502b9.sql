@@ -1,0 +1,2 @@
+ALTER TABLE public.meeting_notes DROP CONSTRAINT IF EXISTS meeting_notes_week_start_key;
+ALTER TABLE public.meeting_notes ADD CONSTRAINT meeting_notes_company_week_start_key UNIQUE (company_id, week_start);

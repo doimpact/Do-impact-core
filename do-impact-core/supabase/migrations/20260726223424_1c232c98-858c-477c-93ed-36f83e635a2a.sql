@@ -1,0 +1,2 @@
+ALTER TABLE public.working_capital_kpis DROP CONSTRAINT IF EXISTS working_capital_kpis_month_key;
+ALTER TABLE public.working_capital_kpis ADD CONSTRAINT working_capital_kpis_company_month_key UNIQUE (company_id, month);

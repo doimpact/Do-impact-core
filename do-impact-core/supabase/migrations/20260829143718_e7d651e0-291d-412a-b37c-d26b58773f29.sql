@@ -1,0 +1,1 @@
+revoke execute on function public.tg_apqp_seed_checklist() from anon, authenticated, public;

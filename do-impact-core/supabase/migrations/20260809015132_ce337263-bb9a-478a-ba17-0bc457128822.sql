@@ -1,0 +1,1 @@
+ALTER TABLE public.owner_financials ADD COLUMN IF NOT EXISTS extras jsonb NOT NULL DEFAULT '{}'::jsonb;

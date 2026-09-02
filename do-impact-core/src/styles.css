@@ -1,0 +1,184 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Urbanist", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Epilogue", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-pillar-strategy: var(--pillar-strategy);
+  --color-pillar-commercial: var(--pillar-commercial);
+  --color-pillar-oms: var(--pillar-oms);
+  --color-pillar-people: var(--pillar-people);
+  --color-navy-50: var(--navy-50);
+  --color-navy-100: var(--navy-100);
+  --color-navy-200: var(--navy-200);
+  --color-navy-300: var(--navy-300);
+  --color-navy-400: var(--navy-400);
+  --color-navy-500: var(--navy-500);
+  --color-navy-600: var(--navy-600);
+  --color-navy-700: var(--navy-700);
+  --color-navy-800: var(--navy-800);
+  --color-navy-900: var(--navy-900);
+  --color-navy-950: var(--navy-950);
+  --color-gold-400: var(--gold-400);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(0.985 0.005 90);
+  --foreground: oklch(0.18 0.03 250);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.03 250);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.03 250);
+  --primary: oklch(0.24 0.06 255);
+  --primary-foreground: oklch(0.985 0.005 90);
+  --secondary: oklch(0.94 0.01 250);
+  --secondary-foreground: oklch(0.24 0.06 255);
+  --muted: oklch(0.95 0.008 250);
+  --muted-foreground: oklch(0.48 0.02 250);
+  --accent: oklch(0.78 0.14 75);
+  --accent-foreground: oklch(0.18 0.03 250);
+  --destructive: oklch(0.58 0.22 27);
+  --destructive-foreground: oklch(0.985 0.005 90);
+  --border: oklch(0.9 0.01 250);
+  --input: oklch(0.92 0.01 250);
+  --ring: oklch(0.5 0.06 255);
+  --pillar-strategy: oklch(0.45 0.12 260);
+  --pillar-commercial: oklch(0.6 0.14 155);
+  --pillar-oms: oklch(0.55 0.13 40);
+  --pillar-people: oklch(0.55 0.14 310);
+  --navy-50: oklch(0.97 0.01 250);
+  --navy-100: oklch(0.93 0.015 250);
+  --navy-200: oklch(0.86 0.02 250);
+  --navy-300: oklch(0.75 0.03 250);
+  --navy-400: oklch(0.63 0.04 250);
+  --navy-500: oklch(0.5 0.05 250);
+  --navy-600: oklch(0.4 0.05 250);
+  --navy-700: oklch(0.32 0.05 250);
+  --navy-800: oklch(0.25 0.04 250);
+  --navy-900: oklch(0.18 0.03 250);
+  --navy-950: oklch(0.12 0.02 250);
+  --gold-400: oklch(0.75 0.14 85);
+  --gold-500: oklch(0.7 0.15 85);
+  --gold-600: oklch(0.6 0.14 85);
+  --brand-ink: #0F172A;
+  --brand-dot: #F59E0B;
+}
+
+
+.dark {
+  --background: oklch(0.16 0.02 250);
+  --foreground: oklch(0.97 0.005 90);
+  --card: oklch(0.22 0.03 255);
+  --card-foreground: oklch(0.97 0.005 90);
+  --popover: oklch(0.22 0.03 255);
+  --popover-foreground: oklch(0.97 0.005 90);
+  --primary: oklch(0.85 0.05 90);
+  --primary-foreground: oklch(0.2 0.04 255);
+  --secondary: oklch(0.28 0.03 255);
+  --secondary-foreground: oklch(0.97 0.005 90);
+  --muted: oklch(0.28 0.03 255);
+  --muted-foreground: oklch(0.7 0.02 250);
+  --accent: oklch(0.75 0.14 75);
+  --accent-foreground: oklch(0.18 0.03 250);
+  --destructive: oklch(0.65 0.2 22);
+  --destructive-foreground: oklch(0.97 0.005 90);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.6 0.05 255);
+  --pillar-strategy: oklch(0.65 0.15 260);
+  --pillar-commercial: oklch(0.7 0.14 155);
+  --pillar-oms: oklch(0.7 0.14 40);
+  --pillar-people: oklch(0.7 0.14 310);
+  --brand-ink: var(--foreground);
+  --brand-dot: #F59E0B;
+}
+
+
+@layer base {
+  * { border-color: var(--color-border); }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+}
+
+@media print {
+  .no-print { display: none !important; }
+}
+
+/* Scoped Navy Trust theme for pricing / billing surfaces */
+.theme-navy {
+  --background: var(--navy-50);
+  --foreground: var(--navy-900);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--navy-900);
+  --primary: var(--navy-700);
+  --primary-foreground: oklch(0.98 0.005 90);
+  --secondary: var(--navy-100);
+  --secondary-foreground: var(--navy-800);
+  --muted: var(--navy-100);
+  --muted-foreground: var(--navy-500);
+  --accent: var(--gold-500);
+  --accent-foreground: var(--navy-900);
+  --border: var(--navy-200);
+  --input: var(--navy-100);
+  --ring: var(--navy-400);
+}
+
+.dark .theme-navy,
+.theme-navy.dark {
+  --background: var(--navy-950);
+  --foreground: var(--navy-100);
+  --card: var(--navy-900);
+  --card-foreground: var(--navy-100);
+  --primary: var(--navy-100);
+  --primary-foreground: var(--navy-900);
+  --secondary: var(--navy-800);
+  --secondary-foreground: var(--navy-100);
+  --muted: var(--navy-800);
+  --muted-foreground: var(--navy-400);
+  --accent: var(--gold-500);
+  --accent-foreground: var(--navy-900);
+  --border: var(--navy-800);
+  --input: var(--navy-800);
+  --ring: var(--navy-400);
+}
+
+.font-display { font-family: var(--font-display); }
+.font-body { font-family: var(--font-body); }
+
+.brand-ink { color: var(--brand-ink); }
+.brand-dot { color: var(--brand-dot); }
+

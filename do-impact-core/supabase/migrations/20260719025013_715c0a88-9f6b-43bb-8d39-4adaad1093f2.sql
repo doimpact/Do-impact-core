@@ -1,0 +1,1 @@
+ALTER TABLE public.a3_reports ADD COLUMN IF NOT EXISTS pillar_id uuid REFERENCES public.pillars(id) ON DELETE SET NULL;

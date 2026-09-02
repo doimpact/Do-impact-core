@@ -1,0 +1,1 @@
+ALTER TABLE public.strategic_themes ADD COLUMN IF NOT EXISTS archived_at timestamptz;

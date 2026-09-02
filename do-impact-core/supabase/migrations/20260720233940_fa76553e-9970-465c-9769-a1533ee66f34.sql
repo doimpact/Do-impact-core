@@ -1,0 +1,1 @@
+ALTER TABLE public.kpis ADD COLUMN IF NOT EXISTS is_key boolean NOT NULL DEFAULT false;

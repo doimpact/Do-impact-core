@@ -1,0 +1,1 @@
+ALTER TABLE public.cld_diagrams ADD COLUMN IF NOT EXISTS phases jsonb NOT NULL DEFAULT '{}'::jsonb;

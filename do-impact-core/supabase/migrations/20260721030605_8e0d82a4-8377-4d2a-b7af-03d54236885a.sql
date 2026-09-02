@@ -1,0 +1,1 @@
+ALTER TABLE public.objective_monthly_benefits ADD COLUMN IF NOT EXISTS actual numeric NOT NULL DEFAULT 0;

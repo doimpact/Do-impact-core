@@ -1,0 +1,1 @@
+ALTER TABLE public.siop_capacity ADD COLUMN IF NOT EXISTS archived_at timestamptz;

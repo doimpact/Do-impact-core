@@ -1,0 +1,1 @@
+ALTER TABLE public.sc_selection_gates ADD COLUMN IF NOT EXISTS archived_at timestamptz;
